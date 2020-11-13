@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Profile card component</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 99vh;
+        margin: 0;
+        padding: 0;
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-position: calc(-25vw + 12.5%) calc(-50vh + 50%), 50vw calc(50vh + 10px);
+        background-repeat: no-repeat;
+        background-color: #19a2ae;
+        color: #2d3248;
+        font-family: Kumbh Sans;
+      }
+
+      .card {
+        border-radius: 10px;
+        min-width: 330px;
+        max-width: 90vw;
+        background-color: white;
+        box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-footer {
+        padding: 27px 20px;
+        border-top: 1px solid #e8e8e8;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+      }
+
+      .card-footer > div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+      }
+
+      .num {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 1.125rem;
+      }
+
+      .str {
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: #6a6f81;
+        letter-spacing: 1px;
+      }
+
+      .card-header-body {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 27px 20px;
+        padding-top: 0;
+        align-items: center;
+      }
+
+      .pfp {
+        border-radius: 50%;
+        border: 5px solid white;
+        transform: translateY(calc(-50% - 2.5px));
+      }
+
+      .pattern {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        max-width: 100%;
+      }
+
+      .name {
+        font-weight: 700;
+        margin-top: -30px;
+        font-size: 1.125rem;
+      }
+
+      .age {
+        color: #6a6f81;
+        font-weight: 400;
+        margin-left: 5px;
+      }
+
+      .location {
+        color: #6a6f81;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <img src="images/bg-pattern-card.svg" class="pattern" />
+        <div class="card-header-body">
+          <img src="images/image-victor.jpg" class="pfp" />
+          <div class="name">Victor Crest <span class="age">26</span></div>
+          <div class="location">London</div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div>
+          <div class="num">80K</div>
+          <div class="str">Followers</div>
+        </div>
+        <div>
+          <div class="num">803K</div>
+          <div class="str">Likes</div>
+        </div>
+        <div>
+          <div class="num">1.4K</div>
+          <div class="str">Photos</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
